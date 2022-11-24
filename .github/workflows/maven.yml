@@ -37,4 +37,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-      run: mvn sonar:sonar -Dsonar.projectKey=new -Dsonar.host.url=$(SONAR_HOST_URL) -Dsonar.login=$(SONAR_TOKEN)
+      run: mvn sonar:sonar -Dsonar.projectKey=new -Dsonar.host.url=http://192.168.198.99:9000 -Dsonar.login=sqp_bb51c5ee46e0da0f9a4ef2c5130dfbe049551d2d
